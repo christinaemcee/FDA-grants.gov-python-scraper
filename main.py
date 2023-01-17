@@ -77,7 +77,8 @@ def parse_data():
                             else:
                                 purpose = str(element)
                             input_excel_df.at[index, 'purpose'] = purpose.text
-                    except AttributeError:
+                    except AttributeError as e:
+                        print(e)
                         print('type1')
                         # Aids in troubleshooting
                         print(f'attribute error at {url}')
@@ -128,7 +129,8 @@ def parse_data():
                         text = text[:index_2]
                         input_excel_df.at[index, 'purpose'] = purpose.text
                         input_excel_df.at[index, 'text'] = text
-                    except AttributeError:
+                    except AttributeError as e:
+                        print(e)
                         print('type3')
                         # Aids in troubleshooting
                         print(f'attribute error at {url}')
