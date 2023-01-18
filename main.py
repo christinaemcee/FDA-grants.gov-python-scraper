@@ -142,5 +142,6 @@ def parse_data():
 
 
 if __name__ == '__main__':
-    # excel_prep("./excel_files/input.xlsx")
+
     parse_data()
+# excel_prep("./excel_files/input.xlsx")
